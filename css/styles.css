@@ -1,13 +1,16 @@
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
-  --hover-text-color: #404bbf;
+  --accent-text-color: #404bbf;
   --logo-text-color: #4d5ae5;
   --primary-white-color: #ffffff;
   --footer-logo-part-color: #f4f4fd;
 }
 
-h1,h2,h3,p {
+h1,
+h2,
+h3,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -17,15 +20,23 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-  img {
-    display: block;
-  }
+img {
+  display: block;
+}
 
-  .container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
@@ -50,14 +61,24 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-text-color);
+  margin-right: 76px;
 }
 
 .logo-part {
   color: var(--title-text-color);
 }
 
+.header-nav {
+  display: flex;
+  /* align-items: center; */
+}
+
 /* Site-nav */
 
+.site-nav {
+  display: flex;
+  /* align-items: center; */
+}
 .site-nav .link {
   font-weight: 500;
   font-size: 16px;
@@ -66,14 +87,29 @@ body {
   color: var(--title-text-color);
 }
 
+.site-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--hover-text-color);
+  color: var(--accent-text-color);
 }
 
 .address {
   font-style: normal;
 }
+
+.address-list {
+  display: flex;
+  /* align-items: center; */
+}
+
+.address-list .address-item + .address-item {
+  margin-left: 40px;
+}
+
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -84,13 +120,15 @@ body {
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--hover-text-color);
+  color: var(--accent-text-color);
 }
 
 /* Hero */
 
 .hero {
   background-color: var(--title-text-color);
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .hero-title {
@@ -100,6 +138,15 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+  margin-bottom: 48px;
+  width: 496px;
+  height: 120px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -111,16 +158,27 @@ body {
   color: var(--primary-white-color);
   background-color: var(--logo-text-color);
   cursor: pointer;
+  letter-spacing: 0.02em;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .button:hover,
 .button:focus {
-  background-color: var(--hover-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* Advantage */
 
-
+.advantage {
+  display: flex;
+}
 
 .advantage .title {
   font-weight: 500;
@@ -148,6 +206,12 @@ body {
   color: var(--title-text-color);
 }
 
+.list-work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
 /* Our team */
 
 .section-team {
@@ -158,19 +222,33 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.team .title {
+.team-list .title {
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--title-text-color);
 }
 
-.team .text {
+.team-list .text {
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--primary-text-color);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content-wrapper {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+  padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* Footer */
@@ -212,20 +290,19 @@ body {
 .btn:active {
   color: var(--primary-white-color);
   background-color: var(--hover-text-color);
-
 }
 
 .card .card-title {
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.02em;
-color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
 .card .text {
-font-size: 16px;
-line-height: calc(24/16);
-letter-spacing: 0.02em;
-color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
