@@ -143,8 +143,7 @@ body {
 
 .hero {
   background-color: var(--title-text-color);
-  padding-top: 188px;
-  padding-bottom: 292px;
+  padding: 188px 0 
 }
 
 .hero-title {
@@ -154,8 +153,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
-  margin-bottom: 48px;
-  width: 496px;
+  margin: 0 auto 48px;
+  max-width: 496px
   height: 120px;
 }
 
@@ -178,6 +177,10 @@ body {
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
 }
 
 .button:hover,
