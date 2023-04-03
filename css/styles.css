@@ -35,8 +35,7 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px
 }
 .header-container {
   display: flex;
@@ -88,6 +87,7 @@ body {
 .site-nav {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .site-nav .link {
   font-weight: 500;
@@ -95,10 +95,13 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  gap: 40px;
+  
   padding: 24px 0
 }
 
+.site-nav-item {
+  margin-right: 40px;
+}
 .site-nav-item:not(:last-child) {
   margin-right: 40px;
 }
