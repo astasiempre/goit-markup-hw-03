@@ -316,7 +316,7 @@ padding: 32px 16px
 
 /* Portfolio */
 
-.button-list {
+.button-list.list {
   display: flex;
   justify-content: center;
   gap: 24px;
