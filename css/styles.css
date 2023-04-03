@@ -351,6 +351,7 @@ padding: 12px 24px;
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
+border: 1px solid transparent;
 }
 
 .btn:active {
@@ -368,23 +369,24 @@ border-radius: 4px;
 
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 
-  margin-top: calc(-1 * 48px);
-  margin-left: calc(-1 * 24px)
+  /* margin-top: calc(-1 * 48px);
+  margin-left: calc(-1 * 24px) */
 }
 
 .portfolio-list > .portfolio-item {
-  flex-basis: calc(100% / 3 - 24px);
-  margin-top: 48px;
-  margin-left: 24px;
+  width: calc(100% / 3 - 24px);
+
+  /* margin-top: 48px;
+  margin-left: 24px; */
 }
 
 .card-content-wrap {
-padding-top: 32px;
-padding-bottom: 32px;
-padding-left: 16px;
 border: 1px solid #E7E9FC;
 border-top: none;
+padding: 32px 16px
 }
 
 .portfolio-list .card-title {
