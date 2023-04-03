@@ -69,7 +69,7 @@ body {
   color: var(--logo-text-color);
   margin-right: 76px;
   align-items: center;
-  padding: 24px 0;
+
 }
 
 .logo-part {
@@ -98,19 +98,24 @@ body {
 }
 
 
-
-
 .site-nav-item {
   margin-right: 40px;
+  padding: 24px 0;
 }
 
 .site-nav-item:not(:last-child) {
   margin-right: 40px;
 }
 
+
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-text-color);
+}
+
+.site-nav-item > .link {
+  padding: 24px 0;
 }
 
 .address {
