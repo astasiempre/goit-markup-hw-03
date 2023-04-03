@@ -35,14 +35,14 @@ img {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px
+  padding: 0 15px;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
   align-items: center;
+
+
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -88,6 +88,7 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0
 }
 .site-nav .link {
   font-weight: 500;
@@ -95,13 +96,15 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  padding: 24px 0;
   
-  padding: 24px 0
 }
+
 
 .site-nav-item {
   margin-right: 40px;
 }
+
 .site-nav-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -200,8 +203,6 @@ body {
   display: flex;
   gap: 24px;
 
-  /* margin-top: calc(-1 * var(--card-gap));
-  margin-left: calc(-1 * var(--card-gap)) */
 }
 
 .advantage-list .title {
@@ -215,8 +216,7 @@ body {
 
 .advantage-list > .advantage-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-  /* margin-top: var(--card-gap);
-  margin-left: var(--card-gap); */
+
 }
 
 .advantage-list .text {
@@ -371,16 +371,11 @@ border: 1px solid transparent;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-
-  /* margin-top: calc(-1 * 48px);
-  margin-left: calc(-1 * 24px) */
 }
 
 .portfolio-list > .portfolio-item {
   width: calc((100% - 48px) / 3);
 
-  /* margin-top: 48px;
-  margin-left: 24px; */
 }
 
 .card-content-wrap {
