@@ -99,13 +99,9 @@ body {
 
 
 .site-nav-item {
-  margin-right: 40px;
   padding: 24px 0;
 }
 
-.site-nav-item:not(:last-child) {
-  margin-right: 40px;
-}
 
 
 
@@ -128,9 +124,7 @@ body {
   gap: 40px;
 }
 
-.address-list .address-item + .address-item {
-  margin-left: 40px;
-}
+
 
 
 .address-link {
@@ -231,6 +225,9 @@ body {
 
 /* what are we doing */
 
+.section-work {
+  padding-top: 0;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -249,6 +246,10 @@ body {
   gap: 24px;
 }
 
+.work-item {
+  width: calc((100% - 48) / 3)
+}
+
 /* Our team */
 
 .section-team {
@@ -257,7 +258,7 @@ body {
 
 .team-item {
   background-color: var(--primary-white-color);
-
+  width: calc((100% - 72) / 4)
 }
 
 .team-list .title {
@@ -300,6 +301,7 @@ padding: 32px 16px
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer .logo-part {
@@ -327,9 +329,6 @@ padding: 32px 16px
   margin-bottom: 72px;
 }
 
-.button-item:not(:last-child) {
-  margin-right: 24px;
-  } 
 
 
 
@@ -364,7 +363,7 @@ border: 1px solid transparent;
 }
 
 .section-portfolio {
-  padding: 96px 120px
+  padding: 96px 0 120px 0;
 }
 
 
